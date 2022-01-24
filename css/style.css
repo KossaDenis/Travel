@@ -959,3 +959,7 @@ input:focus {outline: 0;}
     }
 }
 
+.pagination {
+    position: absolute;
+    top: 100px;
+}

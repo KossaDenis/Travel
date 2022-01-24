@@ -66,3 +66,44 @@ $(function () {
     });
 
 })
+
+
+
+let pagination = document.querySelectorAll('.pagination span')
+let btn_left = document.querySelectorAll('.btn_left')
+let btn_right = document.querySelectorAll('.btn_right')
+let slide = document.querySelectorAll('.first_section_imgs .first_section_img')
+
+setTimeout(
+    () => {
+        document.querySelectorAll('.first_section_imgs .slick-track')[0].addEventListener('transitionstart', () => {
+            slide.forEach((slide, ind) => {
+                if (slide.classList.contains('slick-current')) {
+                    pagination[0].innerHTML = ind + 1
+                }
+            })
+        })
+    },
+    100
+)
+
+setTimeout(
+    () => {
+        btn_left = document.querySelectorAll('.btn_left')
+        btn_right = document.querySelectorAll('.btn_right')
+
+        btn_left.addEventListener('click', () => {
+            slide.forEach((slide, ind) => {
+                slide.classList.contains('slick-current') ?
+                    pagination[0].innerHTML = ind + 1 : {}
+            })
+        })
+        btn_right.addEventListener('click', () => {
+            slide.forEach((slide, ind) => {
+                slide.classList.contains('slick-current') ?
+                    pagination[0].innerHTML = ind + 1 : {}
+            })
+        })
+    },
+    100
+)
