@@ -177,7 +177,7 @@ input:focus {outline: 0;}
 /* second_section */
 
 .second_section{
-    padding-top: 15em;
+    padding-top: 20em;
     margin-bottom: 3em;
     min-height: 100vh;
 }
@@ -940,6 +940,12 @@ input:focus {outline: 0;}
     .third_section_title{
         font-size: 32px;
         line-height: 41px;
+    }
+}
+@media(max-width:430px){
+    .sixth_section_box_paragraph{
+        font-size: 16px;
+        line-height: 21px;
     }
 }
 @media(max-width:320px){
