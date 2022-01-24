@@ -148,11 +148,13 @@ input:focus {outline: 0;}
     width: 11%;
     color: #FF715B;
     margin-top: 1em;
-    cursor: pointer;
 }
-
 .ui-menu li{
     margin-bottom: 1em;
+    cursor: pointer;
+}
+.ui-menu li:hover{
+    color: rgb(196, 196, 196);
 }
 .date{
     color: #FF715B;

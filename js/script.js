@@ -47,8 +47,11 @@ $(function () {
         prevArrow: '<img src="./img/arrow left.svg" class = "btn_left" alt="">',
         nextArrow: '<img src="./img/arrow right.svg" class = "btn_right" alt="">'
     })
+    //maskMoney
+
     $('.money').maskMoney();
 
+    //autocomplete
     let myArray = [
         "Cairo",
         "Alexandria",
