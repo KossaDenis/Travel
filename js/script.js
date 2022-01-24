@@ -13,6 +13,7 @@ item.forEach((element, index) => {
     })
 })
 
+//search
 let search = document.querySelector(".search"),
     search_input = document.querySelector(".search_input");
 
@@ -24,8 +25,8 @@ search.addEventListener("click", function () {
         search_input.style.display = 'block'
         setTimeout(() => search_input.classList.add("active"), 1)
     }
-
 })
+//slick
 $(function () {
     $('.sixth_section_item').slick({
         arrows: false,
@@ -49,8 +50,8 @@ $(function () {
     $('.money').maskMoney();
 
     let myArray = [
-        "Cairo", 
-        "Alexandria", 
+        "Cairo",
+        "Alexandria",
         "Giza",
         "Shubra el-Kheima",
         "Port Said",
@@ -60,5 +61,5 @@ $(function () {
     $('.destinations').autocomplete({
         source: myArray
     });
-})
 
+})
