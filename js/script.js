@@ -1,6 +1,5 @@
 let item = document.querySelectorAll(".fourth_section_item_content"),
     content = document.querySelectorAll(".fourth_section_item_paragraph");
-
 item.forEach((element, index) => {
     element.addEventListener("click", function () {
         if (content[index].classList.contains("active")) {
@@ -12,6 +11,7 @@ item.forEach((element, index) => {
         }
     })
 })
+
 
 //search
 let search = document.querySelector(".search"),
@@ -69,6 +69,8 @@ $(function () {
 
 
 
+
+
 let pagination = document.querySelectorAll('.pagination span')
 let btn_left = document.querySelectorAll('.btn_left')
 let btn_right = document.querySelectorAll('.btn_right')
@@ -92,16 +94,18 @@ setTimeout(
         btn_left = document.querySelectorAll('.btn_left')
         btn_right = document.querySelectorAll('.btn_right')
 
-        btn_left.addEventListener('click', () => {
+        btn_left[0].addEventListener('click', () => {
             slide.forEach((slide, ind) => {
-                slide.classList.contains('slick-current') ?
-                    pagination[0].innerHTML = ind + 1 : {}
+                if (slide.classList.contains('slick-current')) {
+                    pagination[0].innerHTML = ind + 1
+                }
             })
         })
-        btn_right.addEventListener('click', () => {
+        btn_right[0].addEventListener('click', () => {
             slide.forEach((slide, ind) => {
-                slide.classList.contains('slick-current') ?
-                    pagination[0].innerHTML = ind + 1 : {}
+                if (slide.classList.contains('slick-current')) {
+                    pagination[0].innerHTML = ind + 1
+                }
             })
         })
     },

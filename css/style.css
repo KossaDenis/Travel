@@ -89,6 +89,9 @@ body{
     align-items: center;
     gap: 65px;
 }
+.navbar-toggler{
+    box-shadow: none !important;
+}
 /* first_section */
 
 .first_section_text{
@@ -175,7 +178,23 @@ input:focus {outline: 0;}
     background-position-x: right;
     width: 240px;
 }
-
+.pagination {
+    position: absolute;
+    bottom: -94px;
+    left: 370px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FF715B;
+}
+.line{
+    position: absolute;
+    bottom: -80px;
+    left: 167px;
+    border: 1px solid #F5EBE9;;
+    width: 183px;
+    height: 2px;
+}
 /* second_section */
 
 .second_section{
@@ -750,7 +769,9 @@ input:focus {outline: 0;}
 .footer_content .col{
     margin-bottom: 1em;
 }
-
+.ui-helper-hidden-accessible{
+    display: none;
+}
 
 @media(max-width:1400px){
     .col4{
@@ -811,6 +832,12 @@ input:focus {outline: 0;}
     .fourth_section_item_paragraph{
         font-size: 11px;
         line-height: 16px;
+    }
+    .eighth_section_img{
+        display: none;
+    }
+    .eighth_section_content{
+        justify-content: center;
     }
 }
 @media(max-width:1166px){
@@ -895,6 +922,25 @@ input:focus {outline: 0;}
     .header_accout{
         display: none;  
     }
+    .btn_left {
+        top: -45px;
+    }
+    .btn_right{
+        top: -45px;
+    }
+    .first_section_form{
+        bottom: -317px;
+    }
+    .first_section_title{
+        font-size: 25px;
+    }
+    .pagination {
+        top: -45px;
+    }
+    .line{
+       top: -25px;
+       left: 167px;
+    }
 }
 @media(max-width:574px){
     .fourth_section_title{
@@ -924,18 +970,17 @@ input:focus {outline: 0;}
         line-height: 47px;
     }
 }
+@media(max-width:484px){
+    .google_play{
+        margin-bottom: 1em;
+    }
+}
 @media(max-width:462px){
-    .btn_left {
-        top: -45px;
+    .pagination {
+       display: none;
     }
-    .btn_right{
-        top: -45px;
-    }
-    .first_section_form{
-        bottom: -317px;
-    }
-    .first_section_title{
-        font-size: 25px;
+    .line{
+       display: none;
     }
 }
 @media(max-width:442px){
@@ -950,6 +995,9 @@ input:focus {outline: 0;}
         line-height: 21px;
     }
 }
+@media(max-width:410px){
+
+}
 @media(max-width:320px){
     .footer_input{
         width: 289px;
@@ -957,9 +1005,4 @@ input:focus {outline: 0;}
     .first_section_text .btn{
         padding: 12px 4px;
     }
-}
-
-.pagination {
-    position: absolute;
-    top: 100px;
 }
